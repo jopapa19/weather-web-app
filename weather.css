@@ -1,0 +1,161 @@
+/* ================= GENERAL STYLES ================= */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #e0f7fa; /* light sky blue */
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1, h2, p {
+    margin: 10px 0;
+}
+
+/* ================= HEADER ================= */
+header {
+    background: #0288d1; /* deep sky blue */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar .logo i {
+    margin-right: 8px;
+}
+
+/* ================= SEARCH SECTION ================= */
+#search {
+    padding: 50px 20px;
+}
+
+#search h1 {
+    font-size: 32px;
+    color: #01579b;
+}
+
+#search p {
+    font-size: 16px;
+    color: #0277bd;
+    margin-bottom: 20px;
+}
+
+#weatherForm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#weatherForm input {
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #0288d1;
+    width: 250px;
+    outline: none;
+}
+
+#weatherForm button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background: #0288d1;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#weatherForm button:hover {
+    background: #01579b;
+}
+
+/* ================= WEATHER DISPLAY ================= */
+#weatherDisplay {
+    padding: 40px 20px;
+    margin-top: 30px;
+    background: #b3e5fc; /* lighter blue */
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.weather-info i {
+    font-size: 64px;
+    color: #0288d1;
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#description {
+    font-size: 18px;
+    color: #01579b;
+    text-transform: capitalize;
+}
+
+#humidity, #wind {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #0277bd;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #0288d1;
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 500px) {
+    #weatherForm {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #weatherForm input {
+        width: 80%;
+    }
+
+    #weatherForm button {
+        width: 80%;
+    }
+
+    .weather-info i {
+        font-size: 48px;
+    }
+
+    #temperature {
+        font-size: 28px;
+    }
+
+    #description {
+        font-size: 16px;
+    }
+}
